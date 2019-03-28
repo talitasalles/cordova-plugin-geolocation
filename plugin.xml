@@ -49,6 +49,10 @@ xmlns:android="http://schemas.android.com/apk/res/android"
               <param name="android-package" value="org.apache.cordova.geolocation.Geolocation" />
           </feature>
         </config-file>
+      
+      	<config-file target="*-Info.plist" parent="NSLocationAlwaysUsageDescription">
+			    <string>Liberação do GPS para obter a localização constantemente</string>
+        </config-file>
 
         <source-file src="src/android/Geolocation.java" target-dir="src/org/apache/cordova/geolocation/" />
 
